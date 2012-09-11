@@ -1,0 +1,141 @@
+   <!DOCTYPE HTML>
+    <html lang="en-US">
+<head>
+<meta charset="UTF-8">
+<!-- disable iPhone inital scale -->
+
+<meta name="viewport" content="width=device-width; initial-scale=1.0">
+
+<title>sample</title>
+
+<!-- main css -->
+<link href="style.css" rel="stylesheet" type="text/css">
+
+<!-- media queries css -->
+<link href="media-queries.css" rel="stylesheet" type="text/css">
+
+
+<style type="text/css">
+
+body {
+    padding: 0;
+    margin: 0;
+}
+
+/************************************************************************************
+iPad landscape view
+*************************************************************************************/
+
+@media screen and (max-width: 1024px) {
+
+
+.ab {
+    width: 512px;
+    float: left;
+    padding: 0;
+    margin: 0;
+    /*display: inline-block;*/
+    
+}
+
+.ab div {
+    height: 100%;
+    border: 1px solid red;
+}
+
+#container {
+    width: 1024px; /* five page widths for five horizontal pages */
+    padding: 0;
+    margin: 1.5em 0 0;
+}
+
+#container ul {
+   
+   width: 1024px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    border:2px dotted #00ff00;
+}
+
+}
+
+/************************************************************************************
+iPad portrait view
+*************************************************************************************/
+
+@media screen and (max-width: 768px) {
+
+
+.ab {
+    width: 768px;
+    float: left;
+    padding: 0;
+    margin: 0;
+/*    display: inline-block;*/
+}
+
+.ab div {
+    height: 100%;
+    border: 1px solid red;
+   }
+
+#container {
+    width: 1536px; /* two page widths for two pages viewed in landscape mode */
+    padding: 0;
+    margin: 1.5em 0 0;
+}
+
+#container ul {
+   
+   	width: 1536px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    border:2px dotted #00ff00;
+}
+
+}
+
+/*#nav {
+    position: fixed;
+    left: 0;
+    top: 0;
+}
+
+#nav a {
+    margin-right: 10px;
+    display: inline-block;
+}*/
+
+</style>
+ </head>
+
+
+<body onLoad="jumpScroll()">
+<!--<div id="nav">
+ <a href="#box1">B1</a>
+ <a href="#box2">B2</a>
+</div>-->
+<div id="container">
+    <ul>
+        <li class="ab" id="box1">
+            <div><a href="#box2"><img src="images/left.jpg" /></a></div>
+        </li>
+        <li class="ab" id="box2">
+            <div><img src="images/right.jpg" /></div>
+        </li>
+    </ul>
+</div>
+<script type="text/javascript">
+function jumpScroll()
+	{
+		window.scroll(770,0); // horizontal and vertical scroll targets
+	}
+
+</script>
+
+
+
+ </body>
+ </html>
