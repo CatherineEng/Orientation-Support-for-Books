@@ -1,0 +1,190 @@
+/************************************************************************************
+iPad landscape view
+*************************************************************************************/
+@media screen and (max-width: 1024px) {
+
+	/* pagewrap */
+	#pagewrap {
+		margin-top:40px;
+	    padding: 0;
+		width: 100%;
+	}
+    
+    /* pagewrapcover */
+	#pagewrapcover {
+		margin-top:40px;
+		width: 100%;
+	}
+
+.ab {
+    width: 505px;
+    padding: 0;
+    margin: 0;
+}
+
+.ab div #right{
+/*	width:510px;*/
+    height: 768px;   
+}
+
+#pagewrap ul {
+    width: 100%;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+
+	/* left */
+	#left {
+		width: 50%;
+		height: 100%;
+		position: relative;
+	}
+	
+	/* right */
+	#right {
+		width: 50%;
+		height: 100%;
+		position: relative;
+	}
+
+	/* left */
+	#leftb {
+		width: 50%;
+	}
+
+	/* right */
+	#rightb {
+		width: 50%;
+	}
+
+	/* leftcover */
+	#leftcover {
+		width: 50%;
+	}
+
+	/* rightcover */
+	#rightcover {
+		width: 50%;
+	}
+
+
+
+}
+
+/************************************************************************************
+iPad portrait view
+*************************************************************************************/
+@media screen and (max-width: 768px) {
+
+	/* pagewrap */
+	#pagewrap {
+		margin-top:0;
+		padding: 0;
+		width: 1536px;
+	}
+	
+	#pagewrap ul {
+    width: 1536px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+	/* pagewrapcover */
+	#pagewrapcover {
+		margin-top:0;
+		width: 768px;
+	}
+
+.ab {
+    width: 704px;
+    padding: 0;
+    margin: 0;
+ 
+}
+
+.ab div #right{
+/*	width:764px;*/
+    height: 1020px;   
+    float:right;
+}
+
+
+	/* left */
+	#left {
+		width: 764px;
+		height: 1024px;
+		position: relative;
+		float: left;
+	}
+	
+	/* left */
+	#leftb {
+		width: 1px !important; 
+		float: left;
+	}
+	
+	/* leftcover */
+	#leftcover {
+		width: 1px;
+		float: left;
+	}
+	
+	#leftswipe {
+		width:auto:
+		float:none;
+				
+	}
+
+	/* right */
+	#right {
+		width: 764px;
+		height:1024px;
+		margin: 0;
+		float: right;
+	}
+	#rightb {
+		width: 764px;
+		margin: 0;
+		float: right;
+	}
+	/* rightcover */
+	#rightcover {
+		width: 768px;
+		margin: 0;
+		float: right;
+	}
+	
+	/* rightcover */
+
+
+	/* embedded videos */
+	.video embed,
+	.video object,
+	.video iframe {
+		min-height: 250px;
+	}
+
+}
+
+/************************************************************************************
+iPhone portrait view
+*************************************************************************************/
+@media screen and (max-width: 480px) {
+
+	/* disable webkit text size adjust (for iPhone) */
+	html {
+		-webkit-text-size-adjust: none;
+	}
+
+	/* main nav */
+	#main-nav a {
+		font-size: 90%;
+		padding: 10px 8px;
+	}
+
+
+}
+
